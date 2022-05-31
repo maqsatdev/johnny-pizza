@@ -1,0 +1,156 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Комбо",
+      "code": "combo"
+    },
+    {
+      "id": 2,
+      "name": "Пиццы",
+      "code": "pizza"
+    },
+    {
+      "id": 3,
+      "name": "Закуски",
+      "code": "snacks"
+    },
+    {
+      "id": 4,
+      "name": "Десерты",
+      "code": "dessert"
+    },
+    {
+      "id": 5,
+      "name": "Напитки",
+      "code": "drinks"
+    },
+    {
+      "id": 6,
+      "name": "Соусы",
+      "code": "necessary"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "2 бекона",
+      "description": "Джон Бекон 30см + Бекон BBQ 30СМ + 2 бутылки Пепси 0,5 л",
+      "image": "https://johnnypizza.kz/uploads/images/2021/10/23/f_038cb9469f443a822e389355e3483cc80489c816.png",
+      "current_price": "6000",
+      "old_price": "7500",
+      "min_price": null,
+      "category_id": 1,
+      "is_aviable": true,
+      "quantity": "4-6"
+    },
+    {
+      "id": 2,
+      "title": "Для двоих",
+      "description": "Джонер с цыпленком + Джонер Чипотле + 2 стакана Капучино 0,2л",
+      "image": "https://johnnypizza.kz/uploads/images/2020/11/20/f_caa3d7bf0281140283898c853f8c6c8a25906e0c.jpg",
+      "current_price": "6000",
+      "old_price": "7500",
+      "min_price": null,
+      "category_id": 1,
+      "is_aviable": false,
+      "quantity": "2"
+    },
+    {
+      "id": 3,
+      "title": "Мексика",
+      "description": "Цыпленок, сладкий перец, томаты, халапеньо, красный лук, моцарелла, соус сальса, томатный соус",
+      "image": "https://johnnypizza.kz/uploads/images/2020/10/29/f_48591dbd9aba3aa1c99b910df67743a6990a886c.jpg",
+      "current_price": null,
+      "old_price": null,
+      "min_price": "2300",
+      "category_id": 2,
+      "is_aviable": true,
+      "quantity": null
+    },
+    {
+      "id": 4,
+      "title": "Пять хитов",
+      "description": "Пять пицц диаметром 35см со скидкой 20%: Пепперони, Мясная, Итальянская, Четыре Сезона и Ветчина и Грибы",
+      "image": "https://johnnypizza.kz/uploads/images/2020/11/22/f_e7e2bdbd19cce708998510697b6b548d1b51578f.jpg",
+      "current_price": "15750",
+      "old_price": "19700",
+      "min_price": null,
+      "category_id": 1,
+      "is_aviable": true,
+      "quantity": "12-14"
+    },
+    {
+      "id": 5,
+      "title": "Бекон BBQ",
+      "description": "Бекон, красный лук, моцарелла, пицца-соус, соус Барбекю, цыпленок",
+      "image": "https://johnnypizza.kz/uploads/images/2020/10/29/f_a513d43238650f6576f26f6673cd98e8a65906e5.jpg",
+      "current_price": null,
+      "old_price": null,
+      "min_price": "2300",
+      "category_id": 2,
+      "is_aviable": true,
+      "quantity": null
+    },
+    {
+      "id": 6,
+      "title": "Джонер Мак Тэйсти",
+      "description": "соус бургер, моцарелла, пепперони, цыпленок, томаты, тортилья",
+      "image": "https://johnnypizza.kz/uploads/images/2021/04/01/f_adac452f1f3ce5ddd90d7ef764a9811efa5e74a8.png",
+      "current_price": "1000",
+      "old_price": null,
+      "min_price": null,
+      "category_id": 3,
+      "is_aviable": true,
+      "quantity": null
+    },
+    {
+      "id": 7,
+      "title": "Рулетики с ананасом и корицей 16 шт",
+      "description": "Ананасы кусочки, Корица молотая, Молоко сгущенное, Сахар, Тесто",
+      "image": "https://johnnypizza.kz/uploads/images/2020/10/22/f_7c51689fe775de693e9372b72cc0e974bb1ece3a.png",
+      "current_price": "800",
+      "old_price": null,
+      "min_price": null,
+      "category_id": 4,
+      "is_aviable": true,
+      "quantity": null
+    },
+    {
+      "id": 8,
+      "title": "Кофе Американо 0,4 л",
+      "description": null,
+      "image": "https://johnnypizza.kz/uploads/images/2020/11/01/f_2adb1ee964787374b21dde86409ae7c12fc444b4.jpg",
+      "current_price": null,
+      "old_price": null,
+      "min_price": null,
+      "category_id": 5,
+      "is_aviable": false,
+      "quantity": null
+    },
+    {
+      "id": 9,
+      "title": "Пепси 0,5л",
+      "description": null,
+      "image": "https://johnnypizza.kz/uploads/images/2021/10/27/f_aeede4dcf7ba99ae2027dfe299c802c2eeb7eb30.png",
+      "current_price": "350",
+      "old_price": null,
+      "min_price": null,
+      "category_id": 5,
+      "is_aviable": true,
+      "quantity": null
+    },
+    {
+      "id": 10,
+      "title": "Соус Барбекю",
+      "description": null,
+      "image": "https://johnnypizza.kz/uploads/images/2020/10/09/f_ce61e6963af4c296e42c73f067dcd3068268ad9c.png",
+      "current_price": "150",
+      "old_price": null,
+      "min_price": null,
+      "category_id": 6,
+      "is_aviable": true,
+      "quantity": null
+    }
+  ]
+}
