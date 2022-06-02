@@ -1,13 +1,35 @@
-import { Link } from "react-router-dom";
+import { Link, scroller } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ list }) => {
-  console.log("navbar");
+  let navigate = useNavigate();
+  const scrollTarget = (target) => {
+    scroller.scrollTo(target, {
+      smooth: true,
+      duration: 700,
+      spy: true,
+      activeClass: "active",
+      offset: -40,
+    });
+  };
+
+  const scrollToPage = async (el) => {
+    if (window.location.pathname !== "/") {
+      await navigate("/");
+    }
+    scrollTarget(el);
+  };
+
   return (
     list && (
       <ul className="main-nav">
         {list.map((category) => (
           <li className="main-nav__item" key={category.code}>
-            <Link to={"/#" + category.code} className="main-nav__link">
+            <Link
+              to={category.code}
+              className="main-nav__link"
+              onClick={() => scrollToPage(category.code)}
+            >
               {category.name}
             </Link>
           </li>
