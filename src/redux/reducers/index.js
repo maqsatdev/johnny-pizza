@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 // reducers
-import products from "./product";
+import modal from "./modal";
 import categories from "./category";
 
 const rootReducer = combineReducers({
-  products,
+  modal,
   categories,
 });
 

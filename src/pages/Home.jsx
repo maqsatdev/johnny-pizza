@@ -1,6 +1,5 @@
-import { useEffect } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Events } from "react-scroll";
 
 // components
 import { Catalog } from "../components";
@@ -9,7 +8,7 @@ const Home = () => {
   const categoryList = useSelector(({ categories }) => categories.categories);
 
   return (
-    <>
+    <React.Fragment>
       {categoryList &&
         categoryList.map((category) => (
           <Catalog
@@ -19,7 +18,7 @@ const Home = () => {
             categoryId={category.id}
           />
         ))}
-    </>
+    </React.Fragment>
   );
 };
 

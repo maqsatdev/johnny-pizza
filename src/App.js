@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 
 //components
-import { Header, StickyBlock } from "./components";
+import { Header, Modal, StickyBlock } from "./components";
 
 //pages
 import { Home, Cart } from "./pages";
@@ -12,6 +12,9 @@ import { Home, Cart } from "./pages";
 import { fetchCategories } from "./redux/actions/category";
 
 function App() {
+  // modal status
+  const modalStatus = useSelector(({ modal }) => modal.isActive);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -28,6 +31,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
+      <Modal active={modalStatus} />
     </div>
   );
 }

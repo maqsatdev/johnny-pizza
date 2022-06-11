@@ -269,6 +269,40 @@ body {
 .label-violet {
   background-color: var(--violet-color);
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--trs);
+  -webkit-transition: var(--trs);
+  -moz-transition: var(--trs);
+  -ms-transition: var(--trs);
+  -o-transition: var(--trs);
+}
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__container {
+  background-color: var(--white-color);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
 @media only screen and (max-width: 1200px) {
   .catalog-items {
     grid-template-columns: repeat(3, 1fr);

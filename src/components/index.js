@@ -4,3 +4,4 @@ export { default as CartBtn } from "./CartBtn";
 export { default as Catalog } from "./Catalog";
 export { default as Product } from "./Product";
 export { default as StickyBlock } from "./StickyBlock";
+export { default as Modal } from "./Modal";
