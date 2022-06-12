@@ -2,6 +2,8 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.svg";
 
+// components
+import Button from "./UI/Button";
 // actions
 import { setModal } from "../redux/actions/modal";
 
@@ -15,13 +17,12 @@ const Header = () => {
           <Link to="/" className="logotype">
             <img src={Logo} alt="logotype" />
           </Link>
-          <button
-            className="btn btn-grey"
-            onClick={() => dispatch(setModal(true))}
-          >
-            <i className="fa fa-user" aria-hidden="true"></i>
-            <span className="text">Вход</span>
-          </button>
+          <Button
+            text="Вход"
+            type="grey"
+            icon="user"
+            onClickBtn={() => dispatch(setModal(true))}
+          />
         </div>
       </div>
     </header>

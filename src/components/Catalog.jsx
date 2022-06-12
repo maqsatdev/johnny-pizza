@@ -20,7 +20,7 @@ const Catalog = ({ title, code, categoryId, items }) => {
       setProducts(items);
       setLoaded(true);
     }
-  }, []);
+  }, [items]);
 
   return (
     <div className="catalog-section" id={code}>

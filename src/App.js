@@ -4,10 +4,8 @@ import { Routes, Route } from "react-router-dom";
 
 //components
 import { Header, Modal, StickyBlock } from "./components";
-
 //pages
 import { Home, Cart } from "./pages";
-
 // actions
 import { fetchCategories } from "./redux/actions/category";
 

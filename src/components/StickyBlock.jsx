@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 // components
-import { Navbar, CartBtn } from "./index";
+import { Navbar, Button } from "./index";
 
 const StickyBlock = () => {
   const categoryList = useSelector(({ categories }) => categories.categories);
@@ -13,7 +13,15 @@ const StickyBlock = () => {
         <div className="container">
           <div className="sticky-block__flex">
             <Navbar list={categoryList} />
-            <CartBtn />
+            <Button
+              isLink
+              href="/cart"
+              text="Корзина"
+              type="cart"
+              icon="shopping-cart"
+            >
+              <span className="count">0</span>
+            </Button>
           </div>
         </div>
       </div>

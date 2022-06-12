@@ -1,7 +1,9 @@
 export { default as Header } from "./Header";
 export { default as Navbar } from "./Navbar";
-export { default as CartBtn } from "./CartBtn";
 export { default as Catalog } from "./Catalog";
 export { default as Product } from "./Product";
 export { default as StickyBlock } from "./StickyBlock";
-export { default as Modal } from "./Modal";
+
+// UI Elements
+export { default as Modal } from "./UI/Modal";
+export { default as Button } from "./UI/Button";
