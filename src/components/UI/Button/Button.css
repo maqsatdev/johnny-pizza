@@ -1,0 +1,70 @@
+.btn {
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  user-select: none;
+  white-space: nowrap;
+  padding: 10px 20px;
+  text-align: center;
+  outline: none;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: var(--trs);
+  -webkit-transition: var(--trs);
+  -moz-transition: var(--trs);
+  -ms-transition: var(--trs);
+  -o-transition: var(--trs);
+  overflow: hidden;
+  border: none;
+}
+.btn .fa {
+  margin-right: 10px;
+}
+.btn-default {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.btn-default:hover {
+  background-color: var(--red-color);
+}
+.btn-grey {
+  background-color: var(--grey-color);
+  color: var(--text);
+}
+.btn-grey:hover {
+  background-color: var(--grey-border-color);
+}
+.btn-grey .fa {
+  color: var(--grey-text);
+}
+.btn-cart {
+  padding-right: 50px;
+}
+.btn-cart .count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--white-color);
+}
+@media only screen and (max-width: 992px) {
+  .btn-cart {
+    position: fixed;
+    z-index: 101;
+    right: 15px;
+    bottom: 30px;
+  }
+  .btn-cart .text {
+    display: none;
+  }
+}

@@ -1,8 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
+// style
+import "./StickyBlock.css";
 // components
-import { Navbar, Button } from "./index";
+import { Navbar, Button } from "../index";
 
 const StickyBlock = () => {
   const categoryList = useSelector(({ categories }) => categories.categories);

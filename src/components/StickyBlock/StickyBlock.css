@@ -1,0 +1,14 @@
+.sticky-block {
+  position: sticky;
+  top: 0;
+  background-color: var(--white-color);
+  z-index: 10;
+  border-top: 1px solid var(--grey-border-color);
+  border-bottom: 1px solid var(--grey-border-color);
+  background: var(--white-color);
+}
+.sticky-block__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

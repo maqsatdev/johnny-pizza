@@ -1,11 +1,13 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo.svg";
+import Logo from "../../assets/images/logo.svg";
 
+// style
+import "./Header.css";
 // components
-import Button from "./UI/Button";
+import { Button } from "../index";
 // actions
-import { setModal } from "../redux/actions/modal";
+import { setModal } from "../../redux/actions/modal";
 
 const Header = () => {
   const dispatch = useDispatch();

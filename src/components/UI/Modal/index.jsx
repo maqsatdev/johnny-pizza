@@ -1,8 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
+//style
+import "./Modal.css";
 //actions
-import { setModal } from "../../redux/actions/modal";
+import { setModal } from "../../../redux/actions/modal";
 
 const Modal = ({ active }) => {
   const dispatch = useDispatch();

@@ -1,6 +1,9 @@
 import { Link, scroller } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
+// style
+import "./Navbar.css";
+
 const Navbar = ({ list }) => {
   let navigate = useNavigate();
   const scrollTarget = (target) => {

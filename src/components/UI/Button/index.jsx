@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cn from "classnames";
 
+// style
+import "./Button.css";
+
 const Button = ({ isLink, href, type, text, icon, children, onClickBtn }) => {
   return isLink ? (
     <Link

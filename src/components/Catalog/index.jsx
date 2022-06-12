@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 
-import instance from "../api/instance";
+import instance from "../../api/instance";
+
+// style
+import "./Catalog.css";
 
 // components
-import { Product } from "../components";
-import ProductLoader from "./ProductLoader";
+import { Product } from "..";
+import ProductLoader from "../ProductLoader";
 
 const Catalog = ({ title, code, categoryId, items }) => {
   const [products, setProducts] = useState([]);

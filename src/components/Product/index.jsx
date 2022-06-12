@@ -1,4 +1,5 @@
-import React from "react";
+// style
+import "./Product.css";
 
 const Product = ({ data }) => {
   const {
