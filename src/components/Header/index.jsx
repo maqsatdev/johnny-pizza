@@ -23,7 +23,9 @@ const Header = () => {
             text="Вход"
             type="grey"
             icon="user"
-            onClickBtn={() => dispatch(setModal(true))}
+            onClickBtn={() =>
+              dispatch(setModal({ status: true, type: "auth" }))
+            }
           />
         </div>
       </div>

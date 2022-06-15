@@ -9,7 +9,7 @@ const Navbar = ({ list }) => {
   const scrollTarget = (target) => {
     scroller.scrollTo(target, {
       smooth: true,
-      duration: 700,
+      duration: 1000,
       spy: true,
       activeClass: "active",
       offset: -40,

@@ -49,6 +49,20 @@ body {
   max-width: 100%;
   height: auto;
 }
+.text-white {
+  color: var(--white-color);
+}
+.text-center {
+  text-align: center;
+}
+.visible-sm {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .visible-sm {
+    display: block;
+  }
+}
 @media only screen and (max-width: 576px) {
   .logotype {
     max-width: 160px;

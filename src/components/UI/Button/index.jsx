@@ -5,21 +5,33 @@ import cn from "classnames";
 // style
 import "./Button.css";
 
-const Button = ({ isLink, href, type, text, icon, children, onClickBtn }) => {
+const Button = ({
+  isLink,
+  href,
+  type,
+  text,
+  icon,
+  children,
+  onClickBtn,
+  className,
+}) => {
+  const btnClass = cn(
+    {
+      "btn btn-default": true,
+      "btn-cart": type === "cart",
+      "btn-grey": type === "grey",
+    },
+    className
+  );
+
   return isLink ? (
-    <Link
-      to={href}
-      className={cn("btn btn-default", { "btn-cart": type === "cart" })}
-    >
+    <Link to={href} className={btnClass}>
       {icon && <i className={cn("fa", `fa-${icon}`)}></i>}
       <span className="text">{text}</span>
       {children}
     </Link>
   ) : (
-    <button
-      className={cn("btn btn-default", `btn-${type}`)}
-      onClick={onClickBtn}
-    >
+    <button className={btnClass} onClick={onClickBtn}>
       {icon && <i className={cn("fa", `fa-${icon}`)}></i>}
       <span className="text">{text}</span>
       {children}

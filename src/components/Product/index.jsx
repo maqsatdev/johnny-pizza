@@ -1,8 +1,17 @@
+import { useDispatch } from "react-redux";
+
+//components
+import { Button } from "../index";
+// actions
+import { setModal } from "../../redux/actions/modal";
 // style
 import "./Product.css";
 
 const Product = ({ data }) => {
+  const dispatch = useDispatch();
+
   const {
+    id,
     title,
     description,
     image,
@@ -45,9 +54,12 @@ const Product = ({ data }) => {
                 ""
               )}
             </div>
-            <button type="button" className="btn btn-default">
-              Выбрать
-            </button>
+            <Button
+              text="Выбрать"
+              onClickBtn={() =>
+                dispatch(setModal({ status: true, type: "just" }))
+              }
+            ></Button>
           </>
         ) : (
           <div className="item__amount">
